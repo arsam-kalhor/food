@@ -1,0 +1,36 @@
+.main-menu-nav{
+    display: flex;
+    width: 100%;
+    background-color: rgb(105, 8, 185);
+    flex-flow: row wrap;
+    height: 92px;
+    z-index: 1;
+}
+.main-menu-Link{
+    color: snow;
+    text-decoration: none;
+    margin-left: 100px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    height: 80px;
+    padding: 5px;
+}
+.btn-create{
+    margin-top: 20px;
+    width: 200px;
+    height: 34px;
+    border: 1px solid snow;
+    text-align: center;
+    font-size:20px;
+    padding-top: 9px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+}
+.btn-create:hover{
+    background-color: snow;
+    color : black;
+}
+.main-menu-Link:hover{
+    box-shadow: 2px 2px 20px rgba(1, 1, 1 , 0.7);
+    transform: translateY(1px);
+}

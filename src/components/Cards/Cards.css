@@ -1,0 +1,40 @@
+
+.page-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 28px;
+    padding-left: 30px;
+}
+
+.card-container{
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgb(105, 8, 185);
+    border-radius: 15px;
+    padding: 30px;
+    font-family: 'Roboto';
+    font-size : 20px;
+    transition: all 1s ease;
+}
+.card-container:hover{
+    transform: translateY(-10px);
+}
+
+.full-recipe{
+    text-decoration: none;
+    color : snow;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(119, 10, 207);
+    align-self: baseline;
+    margin-left: 80px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+}

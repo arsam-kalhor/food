@@ -1,0 +1,90 @@
+.form-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-size: 10px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(1,1,1,0.5);
+    margin: auto;
+    gap: 10px;
+}
+.form-container div{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .form-container h2{
+    
+} */
+.submit{
+    margin-left: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: snow;
+    color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 3px solid rgb(105, 8, 185);
+    transition: all 0.5s ease;
+}
+.submit:hover{
+    cursor: pointer;
+    color : snow;
+    background-color: rgb(105, 8, 185);
+    box-shadow: 5px 5px 20px rgba(105, 8, 185 , 0.5);
+}
+.form-container input,textarea{
+    border: 2px solid rgb(105, 8, 185);
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+}
+.form-container textarea{
+    border: 2px solid rgb(105, 8, 185);
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    flex: 1;
+}
+.form-container label{
+    margin-left: 10px;
+}
+.form-container .add{
+     margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: snow;
+    color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 3px solid rgb(105, 8, 185);
+    transition: all 0.5s ease;
+}
+.form-container .add:hover{
+    cursor: pointer;
+    color : snow;
+    background-color: rgb(105, 8, 185);
+    box-shadow: 5px 5px 20px rgba(105, 8, 185 , 0.5);
+}
+.temp-ing{
+    box-shadow: 4px 4px 20px rgba(1,1,1,0.5);
+    height: 120px;
+    border-radius: 10px;
+    margin-left : 10px ;
+    font-size : 20px
+}

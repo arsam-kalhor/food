@@ -1,0 +1,33 @@
+.searchbar
+{
+    display: inline-block;
+    position: relative;
+    padding-top: 30px;
+    z-index: 0;
+}
+
+#search-label{
+    color: snow;
+    font-size: 20px;
+    margin-left: 430px;
+    margin-top : 20px;
+    margin-right: 5px;
+}
+#search{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    color : snow;
+    border: 1.6px solid snow;
+    background-color: transparent;
+    padding-left: 12px;
+}
+#search:hover{
+    box-shadow: 1px 1px 10px snow;
+}
+#search:focus{
+    box-shadow: 1px 1px 10px snow;
+
+}
