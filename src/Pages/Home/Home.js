@@ -2,7 +2,7 @@ import Cards from '../../components/Cards/Cards.js'
 import useFetch from '../../hooks/useFetch'
 
 export default function Home() {
-     const {data , error} = useFetch("http://localhost:3000/recipes")
+     const {data , error} = useFetch("https://food-api-dx0q.onrender.com/recipes")
 
   return (
     <div>

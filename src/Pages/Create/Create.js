@@ -12,7 +12,7 @@ export default function Create() {
   const [id , setID] = useState('')
   const [mainPage , setMainPage] = useState(false)
 
-  const {data} = useFetch("http://localhost:3000/recipes");
+  const {data} = useFetch("https://food-api-dx0q.onrender.com/recipes");
 
    useEffect(() => {
     if (data && data.length > 0) {
@@ -54,7 +54,7 @@ const handleSubmit = (event) => {
     
   }
 
-   const {postData} = useFetch("http://localhost:3000/recipes" , 'POST');
+   const {postData} = useFetch("https://food-api-dx0q.onrender.com/recipes" , 'POST');
   return (
     <div className='form-container'>
       <h2 className="page-title">Create New Recipe</h2>
