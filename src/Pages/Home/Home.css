@@ -1,0 +1,7 @@
+.welcome.dark{
+    color : snow;
+    transition: all 0.3s ease-in;
+}
+.welcome{
+    color : black;
+}

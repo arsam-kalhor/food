@@ -1,13 +1,14 @@
 import './Recipe.css';
 import useFetch from '../../hooks/useFetch';
 import { useParams } from 'react-router-dom';
+import {useTheme} from "../../hooks/useTheme";
 
 export default function Recipe() {
   const {id} = useParams();
   const {data : recipe} = useFetch(`http://localhost:3000/recipes/${id}`);
-
+  const {mode} = useTheme();
   return (
-    <div className='container'>
+    <div className={`container ${mode}`}>
       {recipe &&(
        <div>
         <h1>{recipe.title}</h1>

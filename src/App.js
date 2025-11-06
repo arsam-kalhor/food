@@ -5,9 +5,13 @@ import Create from './Pages/Create/Create.js';
 import Recipe from './Pages/Recipe/Recipe.js';
 import Search from './Pages/Search/Search.js';
 import ThemeSelector from "./components/ThemeSelector/ThemeSelector";
+import {useTheme} from "./hooks/useTheme";
+import './App.css';
 
 export default function App() {
+  const {mode} = useTheme();
   return (
+      <div className={`App ${mode}`}>
     <BrowserRouter>
      <NavBar/>
       <ThemeSelector/>
@@ -18,5 +22,6 @@ export default function App() {
       <Route path="/Search" element={<Search/>}/>
     </Routes>
     </BrowserRouter>
+      </div>
   )
 }
