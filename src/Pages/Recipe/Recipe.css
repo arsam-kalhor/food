@@ -12,8 +12,22 @@
     font-size: 20px;
     color : black;
     background: snow;
+    height: 60%;
+    transition: all 0.3s ease-in;
+
 }
 .container.dark{
     background: #555;
+    color: #e4e4e4;
+}
+.recipe-page-container{
+    color : black;
+    background: snow;
+    min-height: 100vh;
+    transition: all 0.3s ease-in;
+
+}
+.recipe-page-container.dark{
+    background: #333;
     color: #e4e4e4;
 }

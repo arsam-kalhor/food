@@ -8,6 +8,11 @@
     box-shadow: 2px 2px 20px rgba(1,1,1,0.5);
     margin: auto;
     gap: 10px;
+    transition: all 0.3s ease-in;
+}
+.form-container.dark{
+    background: #555;
+    color : snow;
 }
 .form-container div{
     display: flex;
@@ -18,15 +23,16 @@
     align-items: center;
     justify-content: flex-start;
 }
+.form-container div.dark{
+    background: #333;
+    color : snow;
+}
 .form-container form {
   display: flex;
   flex-direction: column;
 }
 
-/* .form-container h2{
-    
-} */
-.submit{
+.form-container .submit{
     margin-left: 350px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -39,7 +45,7 @@
     border: 3px solid rgb(105, 8, 185);
     transition: all 0.5s ease;
 }
-.submit:hover{
+.form-container .submit:hover{
     cursor: pointer;
     color : snow;
     background-color: rgb(105, 8, 185);
@@ -51,6 +57,11 @@
     width: 200px;
     height: 25px;
     font-size: 20px;
+    transition: all 0.3s ease-in;
+}
+.form-container input.dark,textarea.dark{
+    background: #555;
+    color : snow;
 }
 .form-container textarea{
     border: 2px solid rgb(105, 8, 185);
@@ -74,6 +85,10 @@
     font-size: 20px;
     border: 3px solid rgb(105, 8, 185);
     transition: all 0.5s ease;
+}
+.form-container .add.dark,.submit.dark{
+    background: transparent;
+    color : snow;
 }
 .form-container .add:hover{
     cursor: pointer;

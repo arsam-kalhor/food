@@ -3,6 +3,7 @@ import { useFetch } from '../../hooks/useFetch'
 import { Navigate } from 'react-router-dom';
 
 import './Create.css'
+import {useTheme} from "../../hooks/useTheme";
 export default function Create() {
   const [title , setTitle] = useState('')
   const [cookingTime , setCookingTime] = useState('')
@@ -13,7 +14,7 @@ export default function Create() {
   const [mainPage , setMainPage] = useState(false)
 
   const {data} = useFetch("https://food-api-dx0q.onrender.com/recipes");
-
+  const {mode , color} = useTheme();
 
 
    useEffect(() => {
@@ -58,8 +59,8 @@ const handleSubmit = (event) => {
 
    const {postData} = useFetch("https://food-api-dx0q.onrender.com/recipes" , 'POST');
   return (
-    <div className='form-container'>
-      <h2 className="page-title">Create New Recipe</h2>
+    <div className={`form-container ${mode}`}>
+      <h2 className="page-title" style={{marginLeft : '10px'}}>Create New Recipe</h2>
     <form >
 
       <div>
@@ -67,13 +68,11 @@ const handleSubmit = (event) => {
         <span className="labels">
         Title:&nbsp;
         </span>
-        <input type="text" onChange={ (event) => {
+        <input style={{borderColor: color}} className={`title ${mode}`} type="text" onChange={ (event) => {
 
           setTitle(event.target.value)}}
            value={title}
            required
-          className="title"
-          
         />
       </label>
       </div>
@@ -83,7 +82,7 @@ const handleSubmit = (event) => {
         <span className="labels">
         ingredients:&nbsp;
         </span>
-        <input type="text" onChange={ (event) => {
+        <input style={{borderColor: color}} className={`title ${mode}`} type="text" onChange={ (event) => {
           setIng(event.target.value)}}
            value={ing}
            onKeyDown={(event) => {if(event.key === 'Enter'){
@@ -92,7 +91,6 @@ const handleSubmit = (event) => {
            } 
           }
         }
-          className="title"
         />
       </label>
       </div>
@@ -100,7 +98,7 @@ const handleSubmit = (event) => {
       <p className='temp-ing'>{list.join(' , ')}</p>
 
 
-      <button className="add" onClick={buttonHandeler} type='button'>Add</button>
+      <button className={`add ${mode}`}  onClick={buttonHandeler} type='button' style={{borderColor: color}}>Add</button>
 
       <div className="method">
       <label>
@@ -111,6 +109,8 @@ const handleSubmit = (event) => {
           setMethod(event.target.value)}}
            value={method}
            required
+           className={`${mode}`}
+            style={{borderColor: color}}
         />
       </label>
       </div>
@@ -120,14 +120,14 @@ const handleSubmit = (event) => {
         <span className="labels">
         Cooking Time:&nbsp;
         </span>
-        <input type="number" onChange={ (event) => {
+        <input style={{borderColor: color}} className={`${mode}`} type="number" onChange={ (event) => {
           setCookingTime(event.target.value)}}
            value={cookingTime}
            required
         />
       </label>
       </div>
-      <button className='submit' onClick= {handleSubmit} type='button'>Submit</button>
+      <button className={`submit ${mode}`} onClick= {handleSubmit} type='button' style={{borderColor: color}}>Submit</button>
     </form>
       {mainPage && (<Navigate to={'/'} replace/>)}
     </div>
