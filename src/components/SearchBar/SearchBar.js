@@ -5,10 +5,12 @@ import { useNavigate } from 'react-router-dom'
 export default function SearchBar() {
     const navigate = useNavigate();
     const [term , setTerm] = useState('')
-    const handleSubmit = (event) => {
+    const handleSubmit = (event) =>
+    {
         event.preventDefault()
         navigate(`/search?q=${term}`)
         setTerm('')
+
     }
   return (
     <div className='searchbar'>

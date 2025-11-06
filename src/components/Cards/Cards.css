@@ -25,8 +25,8 @@
     color : snow;
     width: 200px;
     height: 50px;
-    border: 1px solid black;
-    background-color: rgb(119, 10, 207);
+    border: 1px solid ;
+    background-color: rgb(105, 8, 185);
     align-self: baseline;
     margin-left: 80px;
     margin-top: 40px;
@@ -34,6 +34,12 @@
     display: inline-block;
     align-content: center;
     text-align: center;
+    outline: none;
+    transition: all 0.5s ease;
+}
+.full-recipe:hover{
+    background-color: snow !important;
+    color : black;
 }
 .title{
     font-size: 30px;

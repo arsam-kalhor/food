@@ -14,6 +14,8 @@ export default function Create() {
 
   const {data} = useFetch("https://food-api-dx0q.onrender.com/recipes");
 
+
+
    useEffect(() => {
     if (data && data.length > 0) {
       const last = data[data.length - 1] 
@@ -66,6 +68,7 @@ const handleSubmit = (event) => {
         Title:&nbsp;
         </span>
         <input type="text" onChange={ (event) => {
+
           setTitle(event.target.value)}}
            value={title}
            required

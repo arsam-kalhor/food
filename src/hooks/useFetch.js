@@ -5,7 +5,6 @@ function useFetch(url, method = "GET") {
   const [error, setError] = useState(null);
   const [option, setOption] = useState(null);
 
-  // تابع برای ارسال داده (POST)
   const postData = (postData) => {
     setOption({
       method: "POST",
@@ -44,3 +43,4 @@ function useFetch(url, method = "GET") {
 
 export { useFetch };
 export default useFetch;
+
