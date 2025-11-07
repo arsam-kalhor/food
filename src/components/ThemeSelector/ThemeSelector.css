@@ -11,16 +11,15 @@
     height: 20px;
     border-radius: 50%;
     box-shadow: 2px 2px 20px rgba(1, 1, 1 , 0.7);
-    transition: all 0.5s ease;
     margin-top: 20px;
+    transition: all 0.2s ease-in;
 
 }
 .mode-changer{
     margin-top: 10px;
-    transition: all 0.5s ease;
+    transition: all 1s ease-in;
     border-radius: 50%;
     margin-right: 85%;
-
 }
 .theme:hover , .mode-changer:hover{
     scale: 1.2;

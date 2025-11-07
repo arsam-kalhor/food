@@ -1,0 +1,15 @@
+.search-container{
+    transition: all 0.3s ease-in;
+    min-height: 100vh;
+}
+.search-container.dark{
+    background: #333;
+}
+.search-container .page-title{
+    color : black;
+    transition: all 0.3s ease-in;
+
+}
+.search-container .page-title.dark{
+    color : snow;
+}
